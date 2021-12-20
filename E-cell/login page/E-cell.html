@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            let jsonObj=[
+                {   Code:"A001",
+                    Name:"Ayush",
+                    Score:75,
+                    id:0
+                },
+                {
+                    Code:"A002",
+                    Name:"Radha",
+                    Score:23,
+                    id:1
+                },
+                {
+                    Code:"A003",
+                    Name:"Rohan",
+                    Score:32,
+                    id:2
+                },
+                {
+                    Code:"A004",
+                    Name:"Mayur",
+                    Score:22,
+                    id:3
+                },
+                {
+                    Code:"A005",
+                    Name:"Shivani",
+                    Score:75,
+                    id:4
+                },
+                {
+                    Code:"A006",
+                    Name:"Avika",
+                    Score:34,
+                    id:5
+                },
+                {
+                    Code:"A007",
+                    Name:"John",
+                    Score:45,
+                    id:6
+                },
+                {
+                    Code:"A008",
+                    Name:"Rony",
+                    Score:54,
+                    id:7
+                },
+                {
+                    Code:"A009",
+                    Name:"Karan",
+                    Score:45,
+                    id:8
+                },
+                {
+                    
+                    Code:"A010",
+                    Name:"Shyam",
+                    Score:71,
+                    id:9
+                }
+            ]
+            console.log(jsonObj);
+            function fun1()
+            {
+                
+                var username=document.getElementById("Name").value;
+                var pass=document.getElementById("pass").value;
+                if(username==""&&pass=="")
+                alert("Please enter the both username and password :-");
+                else if(username=="")
+                alert("Please enter the username :-");
+                else if(pass=="")
+                alert("Please enter the password :-");
+                else if((username=="harsh" && pass=="qwerty01$0")||(username=="shivam" && pass=='asdfgh99A@'))
+                {
+                alert("You have enter the right credentials :-");
+                
+                }
+                else
+                alert("You have enter the wrong credentials :-");
+                
+            }
+            
+        </script>
+        <style>
+            body{
+                background-image:url(e-cell\ background\ image.jpg);
+            }
+            div{
+                background:url(e-cell\ center\ background\ image2.jpg);
+                margin-top: 10%;
+                border: 2px solid black;
+                border-style: dotted;
+                height: 250px;
+                width: 250px;
+                padding:10px;
+                
+            }
+        </style>
+    </head>
+    <body><center>
+        <div>
+             <br><br><br><br>
+                    <table>
+                        
+                        <tr>
+                            <td>
+                                <label>Login ID</label>
+                            </td>
+                            <td><input type="text" id="Name" name="name" placeholder="Enter text here"></td>
+                        </tr>
+                        <tr></tr>
+                        <tr>
+                            <td><label>Password</label></td>
+                            <td><input type="password" id="pass" name="password" placeholder="Enter password here"></td>
+                        </tr>
+                    </table><br><br>
+                    <a href="e-cell table.html"> <button onclick="fun1()" id="submit">Submit here</button></a>
+        </div></center>
+    </body>
+</html>
